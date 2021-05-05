@@ -10796,9 +10796,9 @@ body {
 Responsive section
 *******************/
 @media screen and (max-width: 768px) {
-  body {
+  /* body {
     width: 50%;
-  }
+  } */
   .organigrama * {
     margin: 0;
     padding: 0;
