@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Productos y servicios</title>
+    <title>Servicios</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
@@ -40,23 +40,23 @@ background-repeat: repeat-y; background-color: aliceblue;">
     <div class="container">
         <!-- Heading Row-->
         <div class="row align-items-center my-5">
-            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0"
-                    src="assets/img/undraw_Business_decisions_re_84ag.svg" alt="..." /></div>
+            <div class="col-lg-7"><img id="principios" class="img-fluid rounded mb-4 mb-lg-0"
+                    src="assets/img/undraw_product_iteration_kjok.svg" alt="..." /></div>
             <div class="col-lg-5">
                 <h1 class="pb-5">Servicios a prestar</h1>
                 <div class="col-lg-12 accordion" id="accordionExample">
                     <div class="card">
                       <div class="card-header" id="headingOne">
                         <h2 class="mb-0">
-                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <h3>Ahorro en costos humanos</h3>
+                          <button onclick="cambiarImagen()" class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h3 >Ahorro en costos humanos</h3>
                           </button>
                         </h2>
                       </div>
                   
                       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body">
-                            <p>Nuestro departamento de recursos humanos de la de la empresa se libera de la gestión de búsqueda de profesionales y puede dedicar tiempo y esfuerzo en otras áreas a mejorar dentro de la empresa.</p>
+                            <p style ="font-size: x-large;">Nuestro departamento de recursos humanos de la de la empresa se libera de la gestión de búsqueda de profesionales y puede dedicar tiempo y esfuerzo en otras áreas a mejorar dentro de la empresa.</p>
                             <!--<img class="img-fluid rounded mb-4 mb-lg-0"
                         src="assets/img/undraw_Business_decisions_re_84ag.svg" alt="..." /> -->
                         </div>
@@ -65,28 +65,28 @@ background-repeat: repeat-y; background-color: aliceblue;">
                     <div class="card">
                       <div class="card-header" id="headingTwo">
                         <h2 class="mb-0">
-                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <button onclick="cambiarImagen1()" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             <h3>Selección eficiente y rápida</h3>
                           </button>
                         </h2>
                       </div>
                       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                         <div class="card-body">
-                            <p> Nuestra Empresa de selección de personal se enfoca en el proceso de selección llevando a cabo de forma organizada rápida y obteniendo los mejores resultados para cubrir esas vacantes.</p>
+                            <p style ="font-size: x-large;"> Nuestra Empresa de selección de personal se enfoca en el proceso de selección llevando a cabo de forma organizada rápida y obteniendo los mejores resultados para cubrir esas vacantes.</p>
                         </div>
                       </div>
                     </div>
                     <div class="card">
                       <div class="card-header" id="headingThree">
                         <h2 class="mb-0">
-                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <button onclick="cambiarImagen2()" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             <h3>Garantía y profesionalidad</h3>
                           </button>
                         </h2>
                       </div>
                       <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                         <div class="card-body">
-                <p>por la experiencia nuestra empresa de selección de personal tiene un amplio conocimiento del sector lo cual se traduce en que sabemos identificar no sólo los mejores perfiles profesionales, sino que también sabemos Cuáles son las necesidades actuales en cada área profesional y las tendencias a futuro cercano por lo que el filtro que aplicamos es muy estricto.</p>
+                <p style ="font-size: x-large;">por la experiencia nuestra empresa de selección de personal tiene un amplio conocimiento del sector lo cual se traduce en que sabemos identificar no sólo los mejores perfiles profesionales, sino que también sabemos Cuáles son las necesidades actuales en cada área profesional y las tendencias a futuro cercano por lo que el filtro que aplicamos es muy estricto.</p>
                         </div>
                       </div>
                     </div>
@@ -102,6 +102,7 @@ background-repeat: repeat-y; background-color: aliceblue;">
 
     </div>
 
+ 
     <!-- Footer -->
     <footer class="new_footer_area bg_color">
         <div class="new_footer_top">
@@ -111,7 +112,7 @@ background-repeat: repeat-y; background-color: aliceblue;">
                         <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
                             style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                             <img class="img-responsive" style="width: 100%;
-                            border-radius: 20px;" src="assets/img/logo-abstracto-colorido_23-2147504722.jpg" alt="Logo">
+                            border-radius: 20px;" src="assets/img/logoHRBlanco.png" alt="Logo">
                       
                         </div>
                     </div>
@@ -193,5 +194,16 @@ background-repeat: repeat-y; background-color: aliceblue;">
     </div>
 
 </body>
-
+<script>
+    var principios = document.getElementById("principios")
+    function cambiarImagen() {
+        principios.setAttribute("src","assets/img/undraw_product_iteration_kjok.svg")
+    }
+    function cambiarImagen1() {
+        principios.setAttribute("src","assets/img/undraw_Content_structure_re_ebkv.svg")
+    }
+    function cambiarImagen2() {
+        principios.setAttribute("src","assets/img/undraw_secure_files_re_6vdh.svg")
+    }
+</script>
 </html>

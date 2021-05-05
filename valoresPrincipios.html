@@ -40,15 +40,15 @@ background-repeat: repeat-y; background-color: aliceblue;">
     <div class="container">
         <!-- Heading Row-->
         <div class="row align-items-center my-5">
-            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0"
-                    src="assets/img/undraw_Business_decisions_re_84ag.svg" alt="..." /></div>
+            <div class="col-lg-7"><img id="principios" class="img-fluid rounded mb-4 mb-lg-0"
+                    src="assets/img/ValPrin.png" alt="..." /></div>
             <div class="col-lg-5">
                 <h1 class="pb-5">Servicios a prestar</h1>
                 <div class="col-lg-12 accordion" id="accordionExample">
                     <div class="card">
                       <div class="card-header" id="headingOne">
                         <h2 class="mb-0">
-                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <button onClick="cambiarImagenValores()" class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             <h3>VALORES</h3>
                           </button>
                         </h2>
@@ -56,14 +56,21 @@ background-repeat: repeat-y; background-color: aliceblue;">
                   
                       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body">
-                            <ul>
+                            <ul style ="font-size: x-large; border: ridge;border-radius: 20px;" >
                                 <li>Honestidad.</li>
+                                <hr>
                                 <li>Actitud de servicio.</li>
+                                <hr>
                                 <li>Compromiso</li>
+                                <hr>
                                 <li>Aprendizaje continuo.</li>
+                                <hr>
                                 <li>Innovación.</li>
+                                <hr>
                                 <li>Trabajo en equipo.</li>
+                                <hr>
                                 <li>Respeto.</li>
+                                <hr>
                                 <li>Actitud Positiva.</li>
                             </ul>
                         </div>
@@ -72,20 +79,26 @@ background-repeat: repeat-y; background-color: aliceblue;">
                     <div class="card">
                       <div class="card-header" id="headingTwo">
                         <h2 class="mb-0">
-                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <button onclick="cambiarImagen()" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             <h3>PRINCIPIOS</h3>
                           </button>
                         </h2>
                       </div>
                       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                         <div class="card-body">
-                            <ul>
+                            <ul style ="font-size: x-large; border: ridge;border-radius: 20px;" >
                                 <li>Somos una organización humana</li>
+                                <hr>
                                 <li>Escuchamos activamente cuando alguien nos habla y valoramos las opiniones de los otros.</li>
+                                <hr>
                                 <li>Nos interesamos por el equilibrio entre la vida personal y laboral.</li>
+                                <hr>
                                 <li>ndagamos, nos interesamos y nos sensibilizamos por las motivaciones y necesidades del otro.</li>
+                                <hr>
                                 <li>Sentimos vocación por un servicio de alto valor</li>
+                                <hr>
                                 <li>Nos apasionan los resultados extraordinarios</li>
+                                <hr>
                                 <li>Actuamos de manera integra</li>
                             </ul>
                         </div>
@@ -104,6 +117,7 @@ background-repeat: repeat-y; background-color: aliceblue;">
     </div>
 
 
+
     <!-- Footer -->
     <footer class="new_footer_area bg_color">
         <div class="new_footer_top">
@@ -113,7 +127,7 @@ background-repeat: repeat-y; background-color: aliceblue;">
                         <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
                             style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                             <img class="img-responsive" style="width: 100%;
-                            border-radius: 20px;" src="assets/img/logo-abstracto-colorido_23-2147504722.jpg" alt="Logo">
+                            border-radius: 20px;" src="assets/img/logoHRBlanco.png" alt="Logo">
                       
                         </div>
                     </div>
@@ -177,6 +191,16 @@ background-repeat: repeat-y; background-color: aliceblue;">
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
 
+        <script>
+            var principios = document.getElementById("principios")
+            function cambiarImagen() {
+                principios.setAttribute("src","assets/img/manos.png")
+            }
+            var principios = document.getElementById("principios")
+            function cambiarImagenValores() {
+                principios.setAttribute("src","assets/img/ValPrin.png")
+            }
+        </script>
     </div>
 
 </body>
